@@ -1,0 +1,79 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-inicial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../../assets/banner.png");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span {
+  font-family: "EB Garamond", serif;
+}
+
+.frase-inicial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.titulo-inicial {
+    font-size: 45px;
+    padding: 60px 20px 0px 30px;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+.texto-inicial {
+  font-size: 22px;
+  padding: 30px 20px 60px 30px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.escolha-genero h2 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.botoes-escolha {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.botao-inicial {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  align-items: center;
+  background: transparent;
+  border: none;
+  margin: 60px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao-inicial p {
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+  }
+
+.botao-inicial:hover {
+    background-color: #4683ff;
+    border-radius: 50px;
+}
+
+.imagem-inicial {
+    width: 20vw;
+}

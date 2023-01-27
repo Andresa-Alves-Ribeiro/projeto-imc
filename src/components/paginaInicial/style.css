@@ -6,10 +6,7 @@ body {
 }
 
 .pagina-inicial {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../../assets/banner.png");
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: rgb(62,188,232); background: linear-gradient(90deg, rgba(62,188,232,1) 0%, rgba(62,147,232,1) 50%, rgba(62,71,232,1) 100%)
 }
 
 span {
@@ -24,14 +21,13 @@ span {
 
 .titulo-inicial {
     font-size: 45px;
-    padding: 60px 20px 0px 30px;
     text-align: center;
     color: whitesmoke;
   }
 
 .texto-inicial {
   font-size: 22px;
-  padding: 30px 20px 60px 30px;
+  padding: 0px 0px 40px 0px;
   text-align: center;
   color: whitesmoke;
 }

@@ -1,15 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import './style.css'
-import Homem from '../../assets/homem.png'
-import Mulher from '../../assets/mulher.png'
 import Header from '../header/Header'
+import { Formulario } from '../formulario/Formulario'
 
 
 export default function PaginaInicial() {
     return (
-        <div>
-            <div className='pagina-inicial'>
+        <div className='pagina-inicial'>
+            <div>
                 <Header />
                 <section>
                     <div className='frase-inicial'>
@@ -19,23 +17,7 @@ export default function PaginaInicial() {
                 </section>
             </div>
 
-            <body>
-                <section className='escolha-genero'>
-                    <h2>Me identifico como:</h2>
-
-                    <div className='botoes-escolha'>
-                        <Link to="/form-homem" className='botao-inicial'>
-                            <img src={Homem} alt="homem" className='imagem-inicial' />
-                            <p>Homem</p>
-                        </Link>
-
-                        <Link to="/form-mulher" className='botao-inicial'>
-                            <img src={Mulher} alt="homem" className='imagem-inicial' />
-                            <p>Mulher</p>
-                        </Link>
-                    </div>
-                </section>
-            </body>
+            <Formulario />
         </div>
     )
 }

@@ -9,8 +9,18 @@ import InputMask from 'react-input-mask';
 export function Formulario(props) {
     const [form, setForm] = React.useState();
 
-    const handleChange = (event) => {
+    function handleChange(event) {
         setForm({ ...form, [event.target.name]: event.target.value })
+    };
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        if ((form.altura === " " && form.peso === " ") || form.peso === " " || form.altura === " ") {
+            alert("Preencha corretamente os campos!")
+        } else {
+            const imc = form.peso / (form.altura * form.altura)
+            alert("Seu IMC é: " + imc + 'e sua classificação é magreza')
+        }
     };
 
     return (
@@ -18,7 +28,7 @@ export function Formulario(props) {
             <div className='box-form'>
                 <h1>Preencha seus dados abaixo</h1>
 
-                <div className='text-field'>
+                <div className='text-field' >
                     <InputMask
                         mask="9.99"
                         onChange={handleChange}
@@ -27,10 +37,11 @@ export function Formulario(props) {
                         {() => <TextField
                             label="Peso"
                             id="outlined-start-adornment"
-                            sx={{ g: 1, width: '35ch', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', marginBottom: '40px', backgroundColor: 'whitesmoke' }}
+                            sx={{ g: 1, width: '35ch', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', marginBottom: '40px', background: 'whitesmoke' }}
                             InputProps={{
                                 startAdornment: <InputAdornment position="start">kg</InputAdornment>,
                             }}
+                            
                         />}
                     </InputMask>
 

@@ -1,10 +1,11 @@
+import React from 'react'
 import Header from './components/header/Header';
 import PaginaInicial from './components/paginaInicial/PaginaInicial'
 import Router from './routes/Router';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Router />
     </div>
   );

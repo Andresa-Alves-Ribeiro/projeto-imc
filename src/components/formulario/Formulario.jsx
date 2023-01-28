@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
@@ -7,20 +7,14 @@ import './style.css';
 import InputMask from 'react-input-mask';
 
 export function Formulario(props) {
-    const [form, setForm] = React.useState();
+    const [height, setHeight] = useState(0);
+    const [weight, setWeight] = useState(0);
 
     function handleChange(event) {
-        setForm({ ...form, [event.target.name]: event.target.value })
     };
 
     function handleSubmit(event) {
         event.preventDefault()
-        if ((form.altura === " " && form.peso === " ") || form.peso === " " || form.altura === " ") {
-            alert("Preencha corretamente os campos!")
-        } else {
-            const imc = form.peso / (form.altura * form.altura)
-            alert("Seu IMC é: " + imc + 'e sua classificação é magreza')
-        }
     };
 
     return (
@@ -33,9 +27,11 @@ export function Formulario(props) {
                         mask="9.99"
                         onChange={handleChange}
                         name="Altura"
+                        value={height > 0 ? height : ''}
                     >
                         {() => <TextField
                             label="Peso"
+                            
                             id="outlined-start-adornment"
                             sx={{ g: 1, width: '35ch', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', marginBottom: '40px', background: 'whitesmoke' }}
                             InputProps={{
@@ -49,6 +45,7 @@ export function Formulario(props) {
                         mask="999"
                         onChange={handleChange}
                         name="Peso"
+                        value={height > 0 ? height : ''}
                     >
                         {() => <TextField
                             label="Altura"

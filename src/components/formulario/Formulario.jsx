@@ -5,17 +5,19 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './style.css';
 import InputMask from 'react-input-mask';
+import { levels, calculateImc } from '../resultImc/ResultImc.tsx'
+
 
 export function Formulario(props) {
     const [height, setHeight] = useState(0);
     const [weight, setWeight] = useState(0);
 
-    function handleChange(event) {
-    };
-
-    function handleSubmit(event) {
-        event.preventDefault()
-    };
+    const handleCalculatorButton = () => {
+        if (height && weight) {
+        } else {
+            alert("Digite todos os campos!")
+        }
+    }
 
     return (
         <Box sx={{ display: 'flex', flexWrap: 'wrap', flexDirection: 'column', width: '100%', height: '100vh', alignItems: 'center', }}>
@@ -25,25 +27,23 @@ export function Formulario(props) {
                 <div className='text-field' >
                     <InputMask
                         mask="9.99"
-                        onChange={handleChange}
                         name="Altura"
                         value={height > 0 ? height : ''}
                     >
                         {() => <TextField
                             label="Peso"
-                            
+
                             id="outlined-start-adornment"
                             sx={{ g: 1, width: '35ch', display: 'flex', flexWrap: 'wrap', flexDirection: 'column', marginBottom: '40px', background: 'whitesmoke' }}
                             InputProps={{
                                 startAdornment: <InputAdornment position="start">kg</InputAdornment>,
                             }}
-                            
+
                         />}
                     </InputMask>
 
                     <InputMask
                         mask="999"
-                        onChange={handleChange}
                         name="Peso"
                         value={height > 0 ? height : ''}
                     >
@@ -58,7 +58,7 @@ export function Formulario(props) {
                     </InputMask>
                 </div>
 
-                <Button variant="contained" size="large" sx={{ marginLeft: '100px' }}>
+                <Button variant="contained" size="large" sx={{ marginLeft: '100px' }} onClick={handleCalculatorButton}>
                     Enviar
                 </Button>
             </div>

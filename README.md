@@ -83,7 +83,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### FRONT-END |  ReactJs - TypeScript
 
-Cria um projeto Typescript
+Criando um projeto Typescript
 
 ```bash
 
@@ -96,10 +96,25 @@ npx create-react-app meu-app-do-react --template typescript
 
 ## ⚙️ Funcionalidades
 
-### Running the app web
+Você pode acessar o link abaixo e visualizar o deploy:
 
+&nbsp;
+
+https://projeto-imc-seven.vercel.app/
+
+&nbsp;
+
+ou baixando o projeto e inserir os seguintes comandos:
+
+&nbsp;
+
+1.
 ```bash
-cd web
+npm install
+```
+
+2.
+```bash
 npm run dev
 ```
 

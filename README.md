@@ -23,7 +23,7 @@
 
 ## 💻 Sobre o projeto
 
-O objetivo do projeto é criar uma Landing Page com a funcionalidade de mostrar o resultado do cálculo de IMC baseado nos dados inseridos pelo usuário, com base na ação feita pelo usuário (evento de clique). A landing page será autocontida, ou seja, não haverá navegação para outras páginas (internas ou externas).
+O objetivo do projeto é criar uma Landing Page com a funcionalidade de mostrar o resultado do cálculo de IMC baseado nos dados inseridos e com o envio feito pelo usuário (evento de clique). A landing page será autocontida, ou seja, não haverá navegação para outras páginas (internas ou externas).
 
 A página deve ser compatível com diversos tipos de resolução de telas, por exemplo: a. Desktop (1920px) b. Laptop (1440px) c. Tablet (768px) d. Mobile (375px)
 

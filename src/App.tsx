@@ -80,10 +80,10 @@ const App = () => {
         </div>
       </div>
       <div className={styles.footer}>
-        <p>Desenvolvido com ❤️ por Dieferson Soares</p>
+        <p>Desenvolvido com ❤️ por Andresa A Ribeiro</p>
       </div>
     </div>
   )
 }
 
-export default App  
+export default App

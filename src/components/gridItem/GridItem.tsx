@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Level } from "../../helpers/imc"
 import styles from './GridItem.module.css';
 
@@ -6,10 +7,18 @@ import downImage from '../../assets/down.png';
 
 type Props = {
   item: Level
+=======
+import { Level } from "../resultImc/ResultImc";
+import styles from './GridItem.module.css'
+
+type Props = {
+    item: Level
+>>>>>>> 417dc35877a070cfcffe970f3f12a567f84681b1
 }
 
 export const GridItem = ({ item }: Props) => {
     return (
+<<<<<<< HEAD
         <div className={styles.main} style={{ backgroundColor: item.color }}>
             <div className={styles.gridIcon}>
                <img src={item.icon === 'up' ? upImage : downImage} alt="" width="30" />
@@ -27,6 +36,12 @@ export const GridItem = ({ item }: Props) => {
                 </>
             </div>
 
+=======
+        <div>
+            <div>
+                
+            </div>
+>>>>>>> 417dc35877a070cfcffe970f3f12a567f84681b1
         </div>
     )
 }

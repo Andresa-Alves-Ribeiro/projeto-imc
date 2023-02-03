@@ -23,8 +23,8 @@
 
 ## 💻 Sobre o projeto
 
-O objetivo do projeto é criar uma Landing Page com a funcionalidade de mostrar o resultado do cálculo de IMC baseado nos dados inseridos e com o envio feito pelo usuário (evento de clique). A landing page será autocontida, ou seja, não haverá navegação para outras páginas (internas ou externas).
-
+Devido a minha decisão de emagrecer e melhorar minha saúde, tive a ideia de fazer algo relacionado a esse tema (fitness e saude). 
+Neste projeto resolvi criar uma Landing Page com a funcionalidade de mostrar o resultado de um cálculo de IMC indicando em qual classificação o usuário se encaixa e o paramêtro baseado nessa classificação, de acordo com os dados inseridos e enviados pelo usuário (altura e peso).
 A página deve ser compatível com diversos tipos de resolução de telas, por exemplo: a. Desktop (1920px) b. Laptop (1440px) c. Tablet (768px) d. Mobile (375px)
 
 Possui as funcionalidades de:

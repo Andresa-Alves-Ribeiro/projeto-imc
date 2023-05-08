@@ -14,9 +14,12 @@
 
 &nbsp;
 
-![capa1](https://user-images.githubusercontent.com/94997593/215937980-8df1fc86-0107-4a9a-9146-60918c813e1f.png)
+![web](https://user-images.githubusercontent.com/94997593/236954420-9949eeec-6991-4b0a-b1b9-7ee4f5944658.png)
 
 ![capa2](https://user-images.githubusercontent.com/94997593/215938035-d66f6bdb-f6c8-4452-bc97-8631f5552228.png)
+
+![mobile](https://user-images.githubusercontent.com/94997593/236954624-baf60765-6a15-4c45-bdd4-00610fb77a1e.png)
+
 
 &nbsp;
 <a id="-sobre-o-projeto"></a>
